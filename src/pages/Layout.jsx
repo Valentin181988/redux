@@ -1,11 +1,10 @@
-import { Link, Outlet } from "react-router-dom";
+import { Outlet } from "react-router-dom";
+import { AppBar } from "../components/AppBar";
 
 export const Layout = () => {
     return (
         <div>
-            <nav>
-              <Link to="/login">Log in</Link>
-            </nav>
+            <AppBar/>
             <hr/>
             <Outlet />
         </div>
